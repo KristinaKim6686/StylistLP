@@ -11,8 +11,8 @@ import {
   PreTitle,
   Text,
 } from "./Info.styled";
-import ruby from "../../images/png-transparent-red-hair-desktop-fantasy-woman-people-woman-desktop-wallpaper.png";
-import dark from "../../images/png-transparent-hair-model-makeup-model-europe-female-models-make-up.png";
+// import ruby from "../../images/png-transparent-red-hair-desktop-fantasy-woman-people-woman-desktop-wallpaper.png";
+// import dark from "../../images/png-transparent-hair-model-makeup-model-europe-female-models-make-up.png";
 
 export const Info = () => {
   const { t } = useTranslation();
