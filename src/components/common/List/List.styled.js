@@ -2,23 +2,11 @@ import styled from "styled-components";
 import { theme } from "../../../constants/Theme";
 
 const {
-  // colors: { primaryColor, accentColor, secondaryColor },
+  // colors: {  accentColor},
 
   spacing,
 } = theme;
 
-export const SliderWrapper = styled.div`
-  height: 100%;
-  padding: 0 28px 5px;
-
-  @media screen and (min-width: 400px) and (max-width: 500px) {
-    padding: 0 34px;
-  }
-
-  @media screen and (min-width: 501px) and (max-width: 767px) {
-    padding: 0 40px;
-  }
-`;
 
 export const ImageList = styled.div`
   height: 100%;
@@ -32,11 +20,8 @@ export const ImageList = styled.div`
 `;
 export const Image = styled.img`
   display: inline-block;
-  /* max-width: 189px; */
-  /* margin: 0; */
-  /* width: 250px; */
-  border-radius: 8px;
-  box-shadow: 2px -2px 4px rgba(212, 175, 55, 0.1), -4px 4px 4px #8f6b29;
+    border-radius: 8px;
+  box-shadow: 1px -2px 3px rgba(212, 175, 55, 0.1), -4px 3px 4px #8f6b29;
   width: 100%;
   max-width: 80vw;
   height: 260px;
@@ -49,6 +34,10 @@ export const Image = styled.img`
 `;
 
 export const BigImage = styled.img`
-  margin-bottom: ${spacing(3)};
-  width: 100vw;
+  margin: ${spacing(5)} auto;
+     border-radius: 8px;
+  width: 100%;
+  max-width: 80vw;
+  object-fit: cover;
 `;
+

@@ -1,14 +1,14 @@
 import { Swiper } from "swiper/react";
-import "swiper/css";
-import "swiper/css/zoom";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Zoom } from "swiper";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import { Navigation, Pagination } from "swiper";
 
 export const Slider = ({
   children,
-  isNavigation = false,
-  isPagination = false,
+  isNavigation = true,
+  isPagination = true,
   isReviewSlides = false,
   sliderClass,
 }) => {
@@ -27,16 +27,8 @@ export const Slider = ({
     <>
       {isReviewSlides ? (
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={32}
-          breakpoints={{
-            768: {
-              slidesPerView: 2,
-            },
-            1280: {
-              slidesPerView: 4,
-            },
-          }}
           navigation={isNavigation}
           pagination={
             isPagination

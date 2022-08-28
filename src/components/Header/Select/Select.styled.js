@@ -26,7 +26,7 @@ export const DropDownListContainer = styled.div`
   backdrop-filter: blur(3px);
   box-shadow: inset ${boxShadow};
   background-color: ${overlayColor};
-  padding: ${spacing(5)} 0;
+  /* padding: ${spacing(5)} 0; */
   transform: translateY(0%);
   overflow-y: auto;
 `;
@@ -62,6 +62,6 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const Icon = styled.span`
-  padding: ${spacing(5)} ${spacing(5)} 0;
+export const Icon = styled.div`
+  padding: ${spacing(5)} ;
 `;
