@@ -10,13 +10,20 @@ export const Header = () => {
   return (
     <>
       <Heading>
-        <NavLink to={"/"}>
-          <Title>Natalia Timofeeva</Title>
+        
+        {mobileScreen &&
+          <><NavLink to={"/"}>
+          <Title>NT</Title>
         </NavLink>
+           <Select />
+</>
+         }
 
-        {mobileScreen && <Select />}
-
-        {isMatches && <Navigation />}
+        {isMatches &&
+        <> <NavLink to={"/"}>
+          <Title>Natalia Timofeeva</Title>
+        </NavLink><Navigation /></>
+          }
         <LanguageSwitch />
       </Heading>
     </>

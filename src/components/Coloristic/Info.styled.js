@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { theme } from "../../constants/Theme";
 import blondie from '../../images/sad-frog-feels-bad-man-meme.png';
+import { theme } from "../../constants/Theme";
+
 const {
   colors: { accentColor, borderColor ,backgroundColor},
   fontSizing: { headingFontSize, titleFontSize },

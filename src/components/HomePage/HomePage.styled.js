@@ -12,9 +12,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 90vw;
+  /* height: 90vw; */
   background-image: url(${cutie});
-  background-position: right;
+  background-position:bottom  right;
   background-size: 100px;
   background-repeat: no-repeat;
 `;
