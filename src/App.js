@@ -6,7 +6,7 @@ import { GlobalStyle } from "./App.styled";
 import { Layout } from "./components/Layout/Layout";
 import { HomeView } from "./views/HomeView";
 import { ColoristicsGalery } from "./components/Coloristic/ColoristicsGalery";
-
+import { Loader } from "./components/common/Loader/Loader";
 const Coloristic = lazy(() => import("./views/Coloristic"));
 // const ColoristicsGalery = lazy(() =>
 //   import("./components/Coloristic/ColoristicsGalery")
@@ -16,12 +16,12 @@ const App = () => {
   return (
     <div>
       <GlobalStyle />
-      <Suspense fallback={<>Loadding...</>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="/" element={<HomeView />} />
-            <Route path="color" element={<Coloristic />} />
-            <Route path="color/:galery" element={<ColoristicsGalery />} />
+          <Route path='/' element={<Layout />}>
+            <Route path='/' element={<HomeView />} />
+            <Route path='color' element={<Coloristic />} />
+            <Route path='color/:galery' element={<ColoristicsGalery />} />
           </Route>
         </Routes>
       </Suspense>

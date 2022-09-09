@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { theme } from "../../../constants/Theme";
 
 const {
-  colors: { accentColor, borderColor, backgroundColor },
-  fontSizing: { headingFontSize, titleFontSize },
-  fonts: { titleFont },
-  media: { tablet },
+  // colors: { accentColor, borderColor, backgroundColor },
+  // fontSizing: { headingFontSize, titleFontSize },
+  // fonts: { titleFont },
+  // media: { tablet },
   spacing,
 } = theme;
 

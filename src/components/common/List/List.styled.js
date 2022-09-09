@@ -7,7 +7,6 @@ const {
   spacing,
 } = theme;
 
-
 export const ImageList = styled.div`
   height: 100%;
   padding: 16px;
@@ -20,7 +19,7 @@ export const ImageList = styled.div`
 `;
 export const Image = styled.img`
   display: inline-block;
-    border-radius: 8px;
+  border-radius: 8px;
   box-shadow: 1px -2px 3px rgba(212, 175, 55, 0.1), -4px 3px 4px #8f6b29;
   width: 100%;
   max-width: 80vw;
@@ -35,9 +34,8 @@ export const Image = styled.img`
 
 export const BigImage = styled.img`
   margin: ${spacing(5)} auto;
-     border-radius: 8px;
-  width: 100%;
+  border-radius: 8px;
+  width: 65vh;
   max-width: 80vw;
   object-fit: cover;
 `;
-

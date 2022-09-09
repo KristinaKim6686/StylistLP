@@ -5,7 +5,7 @@ export const theme = Object.freeze({
     accentColor: "#df9f28",
     backgroundColor: "#0e0000",
     borderColor: "#8f6b29",
-    overlayColor: "#1B2B2B",
+    overlayColor: "rgba(8, 0, 0, 0.8)",
     disabled: "#A9A9A9",
     boxShadow: `0px 1px 4px 0px #8f6b29`,
   },

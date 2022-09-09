@@ -11,7 +11,6 @@ export const Slider = ({
   isPagination = true,
   isReviewSlides = false,
   sliderClass,
-  virtual = true,
 }) => {
   const modulesArray = () => {
     let result = [];

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { theme } from "../../constants/Theme";
-import cutie from "../../images/sad-frog-feels-bad-man-meme.png";
+
 const {
-  colors: { primaryColor, accentColor, secondaryColor, borderColor },
+  colors: { primaryColor, accentColor, borderColor },
   fonts: { titleFont },
+  media: { tablet, desktop },
   spacing,
 } = theme;
 
@@ -12,11 +13,6 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* height: 90vw; */
-  background-image: url(${cutie});
-  background-position:bottom  right;
-  background-size: 100px;
-  background-repeat: no-repeat;
 `;
 
 export const Title = styled.h1`
@@ -64,4 +60,20 @@ export const Links = styled.div`
   display: flex;
   justify-content: space-around;
   margin: ${spacing(4)};
+`;
+
+export const Img = styled.img`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: ${spacing(45)};
+  /* &: hover {
+
+  } */
+  @media screen and (min-width: ${tablet}) {
+    width: ${spacing(65)};
+  }
+  @media screen and (min-width: ${desktop}) {
+    width: ${spacing(85)};
+  } ;
 `;
